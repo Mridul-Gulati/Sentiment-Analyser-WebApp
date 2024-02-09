@@ -3,7 +3,8 @@ import numpy as np
 import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
 import streamlit as st
-# nltk.download('vader_lexicon')
+nltk.download('vader_lexicon')
+nltk.download('stopwords')
 stopwords = nltk.corpus.stopwords.words('english')
 sid = SentimentIntensityAnalyzer()
 st.title('Sentiment Analysis App')
